@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* navbar */
+
+.navbar {
+  background-color: #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr 8fr 2fr;
+  padding: 1rem 0 1rem 5rem;
+  align-items: center;
+}
+
+.logo {
+  width: 90%;
+}
+
+.line {
+  /* display: block; */
+  height: 90%;
+  width: 2px;
+  background-color: #fff;
+  margin-left: 4rem;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list-item {
+  color: #fff;
+  display: inline;
+  margin-left: 2rem;
+}
+
+.button-small {
+  background-color: #8d3daf;
+  border: none;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+}
+
+/* .......................................... */
+
+/* section */
+
+.hero {
+  background: url(assets/bg.png) no-repeat fixed;
+  background-size: cover;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-heading {
+  font-size: 4rem;
+  color: #ffffff;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+.button-large {
+  background-color: #8d3daf;
+  border: none;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* *************************************************** */
+
+/* MEDIA QUERIES */
+
+@media (max-width: 865px) {
+  .navbar {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .logo {
+    width: 25%;
+  }
+
+  .list {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-heading {
+    font-size: 3rem;
+    color: #ffffff;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    background: url(assets/bg.png) no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .navbar {
+    padding: 1rem 0;
+    background: none;
+  }
+
+  .hero {
+    background: none;
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    min-height: 75vh;
+  }
+
+  .list-item {
+    margin-left: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 800;
+  }
+}
