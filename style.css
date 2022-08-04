@@ -101,7 +101,7 @@
 
   .list {
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .hero-heading {
@@ -139,5 +139,9 @@
     margin-left: 0.5rem;
     font-size: 0.7rem;
     font-weight: 800;
+  }
+  
+  .button-large{
+    box-shadow: 5px 10px 8px #8d3daf, 5px 10px 8px #000;
   }
 }
